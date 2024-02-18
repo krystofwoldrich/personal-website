@@ -3,27 +3,42 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground: #100f20;
+  --text: #e6c2bf;
+  --underline: #ae445a;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground: #e6c2bf;
+    --text: #100f20;
+    --underline: #ae445a;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--foreground);
+  background-color: var(--text);
+}
+
+.sideways-underline::after {
+  content: '';
+  position: absolute;
+  z-index: -10;
+  bottom: -0.25rem;
+  left: -1%;
+  right: 0;
+  height: 0.75rem; /* This controls the "thickness" of the underline */
+  background-color: var(--underline); /* Use the text color for the underline */
+  opacity: 1;
+  transform: rotate(-2deg); /* Rotate the underline to make it sideways */
+  transform-origin: bottom left; /* Pivot from the bottom left */
+  width: 103%; /* Match the length of the text */
+  transition: 0.5s ease-in-out; /* Animate the width change */
+}
+
+.sideways-underline:hover::after {
+  bottom: -0.5rem; /* Move the underline down */
 }
 
 @layer utilities {

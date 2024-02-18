@@ -3,22 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --foreground: #100f20;
-  --text: #e6c2bf;
+  --text: #100f20;
+  --background: #e6cbbf;
   --underline: #ae445a;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground: #e6c2bf;
-    --text: #100f20;
+    --text: #e6cbbf;
+    --background: #100f20;
     --underline: #ae445a;
   }
 }
 
 body {
-  color: var(--foreground);
-  background-color: var(--text);
+  color: var(--text);
+  background-color: var(--background);
 }
 
 .sideways-underline::after {

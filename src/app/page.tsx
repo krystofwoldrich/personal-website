@@ -53,7 +53,7 @@ export default function Home() {
             </span>
           </Link>
         </div>
-        <div className='-order-1 md:order-last'>
+        <div className='-order-1 md:order-last min-w-80'>
           <Image src={'/avatar.jpg'} alt="Krystof Woldrich" width={400} height={400} className='grayscale-0.5 rounded-lg aspect-square object-cover object-left' />
         </div>
       </div>

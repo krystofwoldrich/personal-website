@@ -42,7 +42,7 @@ export default function Home() {
               <span className='sideways-underline'>Visit GitHub</span>
             </span>
           </Link>
-          <Link className={`mb-3 font-extrabold ${manrope.className}`} href="https://www.krystofwoldrich.eu/krystof_woldrich_resume.pdf" target='_blank'>
+          <Link className={`mb-3 font-extrabold ${manrope.className}`} href="/krystof_woldrich_resume.pdf" target='_blank'>
             <span className={`inline-block relative`}>
               <span className='sideways-underline'>Download resume</span>
             </span>

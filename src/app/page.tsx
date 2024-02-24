@@ -5,55 +5,58 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-10 md:p-24">
-      <div className='flex flex-col gap-y-0 items-end'>
-        <Image src={'/avatar.jpg'} alt="Krystof Woldrich" width={300} height={300} className='grayscale-0.5 rounded-lg mb-4' />
-        <span className={`
-          text-6xl
-          font-extrabold
-          tracking-tight
-          md:text-8xl
-          ${bluunext.className}`
-        }>
-          Krystof
-        </span>
-        <span className={`
-          text-6xl
-          font-extrabold
-          tracking-tight
-          md:text-8xl
-          ${bluunext.className}`
-        }>
-          Woldrich
-        </span>
-        <span className={`font-extrabold mb-4 ${manrope.className}`}>
-          Mobile SDK Developer 
-          <Link href="https://sentry.io" target='_blank'>
+    <main className="flex min-h-screen items-center justify-center p-10 md:p-24">
+      <div className='flex flex-col md:flex-row gap-y-4 gap-x-12 items-end md:items-center'>
+        <div className='flex flex-col gap-y-0 items-end'>
+          <span className={`
+            text-6xl
+            font-extrabold
+            tracking-tight
+            md:text-8xl
+            ${bluunext.className}`
+          }>
+            Krystof
+          </span>
+          <span className={`
+            text-6xl
+            font-extrabold
+            tracking-tight
+            md:text-8xl
+            ${bluunext.className}`
+          }>
+            Woldrich
+          </span>
+          <span className={`font-extrabold mb-4 ${manrope.className}`}>
+            Mobile SDK Developer 
+            <Link href="https://sentry.io" target='_blank'>
+              <span className='inline-block relative'>
+                <span className='sideways-underline'>@Sentry</span>
+              </span>
+            </Link>
+          </span>
+          <p className={`font-light ${manrope.className} max-w-lg text-end mb-5`}>
+            {"I'm a software engineer with a passion for mobile development, and a love for building tools that make developers' lives easier. I'm currently working on the mobile SDKs at Sentry, where I'm helping developers find and fix bugs faster."}
+          </p>
+          <Link className={`mb-3 font-extrabold ${manrope.className}`} href="https://www.github.com/krystofwoldrich" target='_blank'>
             <span className='inline-block relative'>
-              <span className='sideways-underline'>@Sentry</span>
+              <span className='sideways-underline'>Visit GitHub</span>
             </span>
           </Link>
-        </span>
-        <p className={`font-light ${manrope.className} max-w-lg text-end mb-5`}>
-          {"I'm a software engineer with a passion for mobile development, and a love for building tools that make developers' lives easier. I'm currently working on the mobile SDKs at Sentry, where I'm helping developers find and fix bugs faster."}
-        </p>
-        <Link className={`mb-3 font-extrabold ${manrope.className}`} href="https://www.github.com/krystofwoldrich" target='_blank'>
-          <span className='inline-block relative'>
-            <span className='sideways-underline'>Visit GitHub</span>
-          </span>
-        </Link>
-        <Link className={`mb-3 font-extrabold ${manrope.className}`} href="https://www.krystofwoldrich.eu/krystof_woldrich_resume.pdf" target='_blank'>
-          <span className={`inline-block relative`}>
-            <span className='sideways-underline'>Download resume</span>
-          </span>
-        </Link>
-        <Link href="https://twitter.com/messages/compose?recipient_id=177336578" target='_blank'>
-          <span className={`inline-block relative font-extrabold ${manrope.className}`}>
-            <span className='sideways-underline'>Send me a message</span>
-          </span>
-        </Link>
+          <Link className={`mb-3 font-extrabold ${manrope.className}`} href="https://www.krystofwoldrich.eu/krystof_woldrich_resume.pdf" target='_blank'>
+            <span className={`inline-block relative`}>
+              <span className='sideways-underline'>Download resume</span>
+            </span>
+          </Link>
+          <Link href="https://twitter.com/messages/compose?recipient_id=177336578" target='_blank'>
+            <span className={`inline-block relative font-extrabold ${manrope.className}`}>
+              <span className='sideways-underline'>Send me a message</span>
+            </span>
+          </Link>
+        </div>
+        <div className='-order-1 md:order-last'>
+          <Image src={'/avatar.jpg'} alt="Krystof Woldrich" width={400} height={400} className='grayscale-0.5 rounded-lg aspect-square object-cover object-left' />
+        </div>
       </div>
-
       {/* <Link
        className={`gap-x-1 flex items-center transition duration-500 ease-in-out hover:text-blue-400 font-extrabold ${manrope.className}`} href="https://twitter.com/messages/compose?recipient_id=177336578">
         Ping me on X!

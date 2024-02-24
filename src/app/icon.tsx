@@ -20,17 +20,22 @@ export default async function GET() {
       // ImageResponse JSX element
       <div
         style={{
-          fontSize: 24,
-          background: '#100f20',
+          fontSize: 30,
+          background: '#e6cbbf',
           width: '100%',
           height: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          color: '#e6cbbf',
+          color: '#100f20',
         }}
       >
-        K
+        <span
+          style={{
+            paddingBottom: 3,
+            paddingLeft: 2,
+          }}
+        >K</span>
       </div>
     ),
     // ImageResponse options

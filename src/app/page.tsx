@@ -22,21 +22,30 @@ export default function Home() {
             font-extrabold
             tracking-tight
             md:text-8xl
-            ${bluunext.className}`
+            ${bluunext.className}
+            mb-4`
           }>
             Woldrich
           </span>
           <span className={`font-extrabold mb-4 ${manrope.className}`}>
-            Mobile SDK Developer 
+            Developer Tools 
+            <Link href="https://https://expo.dev/" target='_blank'>
+              <span className='inline-block relative'>
+                <span className='sideways-underline'>@Expo</span>
+              </span>
+            </Link>
+          </span>
+          <p className={`font-light ${manrope.className} max-w-lg text-end mb-5`}>
+            {"I'm a software engineer with a passion for mobile development, and a love for building tools that make developers' lives easier. I'm currently working on developer tools at Expo, where I'm helping mobile developers create and ship applications faster than ever before."}
+          </p>
+          <span className={`font-medium mb-4 ${manrope.className}`}>
+            Previously Mobile SDKs 
             <Link href="https://sentry.io" target='_blank'>
               <span className='inline-block relative'>
                 <span className='sideways-underline'>@Sentry</span>
               </span>
             </Link>
           </span>
-          <p className={`font-light ${manrope.className} max-w-lg text-end mb-5`}>
-            {"I'm a software engineer with a passion for mobile development, and a love for building tools that make developers' lives easier. I'm currently working on the mobile SDKs at Sentry, where I'm helping developers find and fix bugs faster."}
-          </p>
           <Link className={`mb-3 font-extrabold ${manrope.className}`} href="https://www.github.com/krystofwoldrich" target='_blank'>
             <span className='inline-block relative'>
               <span className='sideways-underline'>Visit GitHub</span>

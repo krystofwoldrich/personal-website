@@ -56,6 +56,11 @@ export default function Home() {
               <span className='sideways-underline'>Download resume</span>
             </span>
           </Link>
+          <Link className={`mb-3 font-extrabold ${manrope.className}`} href="/blog">
+            <span className={`inline-block relative`}>
+              <span className='sideways-underline'>Read blog</span>
+            </span>
+          </Link>
           <Link href="https://twitter.com/messages/compose?recipient_id=177336578" target='_blank'>
             <span className={`inline-block relative font-extrabold ${manrope.className}`}>
               <span className='sideways-underline'>Send me a message</span>
